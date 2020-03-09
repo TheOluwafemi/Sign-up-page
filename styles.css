@@ -1,0 +1,210 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  background-image: url('./images/bg-intro-mobile.png');
+  background-color: hsl(0, 100%, 74%);
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 1rem;
+  color: #fdfdfd;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h3 {
+  font-weight: 700;
+}
+
+.heading p {
+  line-height: 1.7;
+  max-width: 70%;
+  margin: 1rem auto;
+}
+
+.form-area {}
+
+.card--shadow {
+  box-shadow: 0px 11px 2px -2px #19191954;
+  border-radius: 6px;
+}
+
+.pricing {
+  background: hsl(248, 32%, 49%);
+}
+
+.button--big {
+  padding: 1rem 4rem;
+  border-radius: 6px;
+  color: #fdfdfd;
+  border: none;
+  font-size: 16px;
+  line-height: 1.8;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow .2s ease;
+}
+
+.button--big:hover {
+  box-shadow: 0px 1px 20px 3px #19191942;
+}
+
+.form {
+  background-color: #fdfdfd;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.form__field {
+  width: 90%;
+  margin: 1rem 5%;
+}
+
+.form__field::after {
+  /* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.terms {
+  font-size: 14px;
+  color: hsl(246, 25%, 77%);
+  width: 80%;
+  margin: 1rem 10%;
+}
+
+.terms a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+}
+
+input {
+  border: 1px solid hsl(246, 25%, 77%);
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 14px;
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+  outline: none;
+  float: left;
+  width: 90%;
+}
+
+.error-icon {
+  margin-left: -60px;
+  padding: 1rem;
+}
+
+.no-show {
+  display: none;
+}
+
+.email-error {
+  border-color: hsl(0, 93%, 68%) !important;
+}
+
+.error-input {
+  border: 1px solid hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
+}
+
+.error-input::-webkit-input-placeholder {
+  /* Edge */
+  color: hsl(0, 36%, 70%) !important;
+}
+
+.error-input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: hsl(0, 36%, 70%) !important;
+}
+
+.error-input::placeholder {
+  color: hsl(0, 36%, 70%) !important;
+}
+
+.error-msg {
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+  text-align: right;
+  width: 95%;
+}
+
+.button--green {
+  background-color: hsl(154, 59%, 51%);
+  -webkit-box-shadow: inset 0px -8px 6px -5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px -8px 6px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px -8px 6px -5px rgba(0, 0, 0, 0.5);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    padding: 3rem 2rem 3rem 2rem;
+    background-image: url('./images/bg-intro-desktop.png');
+  }
+
+  .heading {
+    flex: 0 50%;
+    text-align: left;
+  }
+
+  .heading h1 {
+    max-width: 70%;
+    font-size: 48px;
+  }
+
+  .heading p {
+    max-width: 85%;
+    margin: 1rem 0;
+  }
+
+  .form-area {
+    flex: 0 55%;
+  }
+
+  .form__field {
+    margin: 2.5rem 5%;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    padding: 6rem 8rem 8rem 8rem;
+    background-image: url('./images/bg-intro-desktop.png');
+  }
+
+  .error-icon {
+    margin-left: -90px;
+    padding: 1rem;
+  }
+
+}
